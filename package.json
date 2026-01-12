@@ -1,0 +1,17 @@
+{
+  "name": "my-docs",
+  "private": true,
+  "scripts": {
+    "meta": "node scripts/genMeta.js",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "npm run meta && vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "vitepress": "latest"
+  },
+  "dependencies": {
+    "markdown-it-katex": "^2.0.3",
+    "markdown-it-mathjax3": "^4.3.2"
+  }
+}
